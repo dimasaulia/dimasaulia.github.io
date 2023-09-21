@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .active-layer {
+        @apply w-full;
+    }
+
+    .active-navbar {
+        @apply bg-slate-200 rounded-md;
+    }
+    .hidden-layer {
+        @apply hidden;
+    }
+
+    .humberger-line {
+        @apply w-[28px] h-[2px] my-2 block bg-slate-600;
+    }
+
+    .humberger-top-rotation {
+        @apply -rotate-45;
+    }
+
+    .humberger-mid-scale {
+        @apply w-0;
+    }
+
+    .humberger-bottom-rotation {
+        @apply rotate-45;
+    }
+
+    .hide-navbar {
+        @apply -translate-x-full md:translate-x-0;
+    }
+
+    .iframe-container {
+        @apply relative overflow-hidden w-full;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+
+    .responsive-iframe {
+        @apply absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .iframe-loading {
+        @apply animate-pulse;
+    }
+}

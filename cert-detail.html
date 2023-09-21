@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Porto</title>
+    <link rel="stylesheet" href="/public/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-quicksand flex">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="hide-navbar z-[999999] transition-all ease-in-out delay-150 left-0 fixed top-10 w-full md:static md:block md:w-1/4 xl:w-1/6 h-screen bg-slate-50 p-5  border-r-2">
+        <h4 class="hidden md:block text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
+
+        <div class="mb-5 flex text-gray-500  p-2">
+            <a href="/index.html" class="font-rubik font-light cursor-pointer ">About</a>
+        </div>
+        
+        <div class="mb-5 flex text-gray-500 p-2">
+            <a href="/portofolio.html" class="font-rubik font-light cursor-pointer">Portofolio</a>
+        </div>
+
+        <div class="mb-4">
+            <div class="mb-1 flex text-gray-500 p-2 justify-between">
+                <a href="/certificate.html" class="font-rubik font-light cursor-pointer">Certificate</a>
+            </div>
+            <div class="mb-1 flex text-gray-500 ps-5 p-2 py-2 justify-between">
+                <a href="/cert-detail.html?c=nde" data-category="nde" class="cert font-rubik font-light cursor-pointer">NDE</a>
+                <img src="/assets/arrow.svg" alt="active item" class="w-2 font-bold hidden">
+            </div>
+            <div class="mb-1 flex text-gray-500 ps-5 p-2 py-2 justify-between">
+                <a href="/cert-detail.html?c=cscu" data-category="cscu" class="cert font-rubik font-light cursor-pointer">CSCU</a>
+                <img src="/assets/arrow.svg" alt="active item" class="w-2 font-bold hidden">
+            </div>
+            <div class="mb-1 flex text-gray-500 ps-5 p-2 py-2 justify-between">
+                <a href="/cert-detail.html?c=fe" data-category="fe" class="cert font-rubik font-light cursor-pointer">Full Stack</a>
+                <img src="/assets/arrow.svg" alt="active item" class="w-2 font-bold hidden">
+            </div>
+            <div class="mb-1 flex text-gray-500 ps-5 p-2 py-2 justify-between">
+                <a href="/cert-detail.html?c=jwd" data-category="jwd" class="cert font-rubik font-light cursor-pointer">Junior Web Dev</a>
+                <img src="/assets/arrow.svg" alt="active item" class="w-2 font-bold hidden">
+            </div>
+        </div>
+        
+
+        <div class="mb-5 flex text-gray-500 p-2">
+            <a href="/competition.html" class="font-rubik font-light cursor-pointer">Competition</a>
+        </div>
+    </nav>
+
+    <header class="flex w-full h-12 bg-slate-50 border-b-2 md:hidden justify-between content-center fixed py-1 px-3">
+        <h4 class="font-rubik text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
+        <button id="toggle" class="block absolute top-1 right-5">
+            <span class="humberger-line origin-right transition-transform"></span>
+            <span class="humberger-line  transition-all ease-out delay-100"></span>
+            <span class="humberger-line origin-right transition-transform"></span>
+        </button>
+    </header>
+
+    <main class="w-full md:w-5/6 h-screen bg-slate-100 overflow-x-hidden overflow-y-scroll">
+        <div class="w-3/4 md:w-2/3 lg:w-3/5 xl:w-3/5 mx-auto mt-16">
+            <h1 class="font-rubik text-2xl text-gray-700 mb-5" id="cert-title">...</h1>
+
+            <div class="iframe-container">
+                <iframe
+                    src=""
+                    frameBorder="0"
+                    scrolling="auto"
+                    height="auto"
+                    width="100%"
+                    class="mb-60 rounded-md drop-shadow responsive-iframe"
+                    id="cert-url"
+                ></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../public/js/navHandler.js"></script>
+<script src="../public/js/cert.js"></script>
+</html>

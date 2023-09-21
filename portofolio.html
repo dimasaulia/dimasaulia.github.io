@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Porto</title>
+    <link rel="stylesheet" href="/public/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-quicksand flex">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="hide-navbar transition-all ease-in-out delay-150 left-0 fixed top-10 w-full md:static md:block md:w-1/4 xl:w-1/6 h-screen bg-slate-50 p-5  border-r-2">
+        <h4 class="hidden md:block text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
+
+        <div class="mb-5 flex text-gray-500  p-2">
+            <a href="/index.html" class="font-rubik font-light cursor-pointer ">About</a>
+        </div>
+        
+        <div class="mb-5 text-gray-500">
+            <div class="mb-1 flex text-gray-500 p-2 justify-between active-navbar">
+                <a href="/portofolio.html" class="font-rubik font-light cursor-pointer">Portofolio</a>
+                <img src="/assets/arrow.svg" alt="active item" class="w-2 font-bold">
+            </div>
+
+            <div class="mb-1 flex text-gray-500 ps-5 py-2 justify-between">
+                <a href="/portofolio-detail.html?c=smartdoorlock" data-category="smartdoorlock" class="font-rubik font-light cursor-pointer">Smart Door Lock</a>
+            </div>
+            <!-- <div class="mb-1 flex text-gray-500 ps-5 py-2 justify-between">
+                <a href="/portofolio-detail.html?c=other" data-category="other" class="font-rubik font-light cursor-pointer">Other</a>
+            </div> -->
+        </div>
+
+        <div class="mb-4">
+            <div class="mb-1 flex text-gray-500 p-2 justify-between ">
+                <a href="/certificate.html" class="font-rubik font-light cursor-pointer">Certificate</a>
+            </div>
+        </div>
+        
+
+        <div class="mb-5 flex text-gray-500 p-2">
+            <a href="/competition.html" class="font-rubik font-light cursor-pointer">Competition</a>
+        </div>
+    </nav>
+
+    <header class="flex w-full h-12 bg-slate-50 border-b-2 md:hidden justify-between content-center fixed py-1 px-3">
+        <h4 class="font-rubik text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
+        <button id="toggle" class="block absolute top-1 right-5">
+            <span class="humberger-line origin-right transition-transform"></span>
+            <span class="humberger-line  transition-all ease-out delay-100"></span>
+            <span class="humberger-line origin-right transition-transform"></span>
+        </button>
+    </header>
+
+    <main class="w-full md:w-5/6 h-screen bg-slate-100 overflow-x-hidden overflow-y-scroll">
+        <div class="w-3/4 md:w-2/3 lg:w-3/5 xl:w-2/5 mx-auto mt-16">
+            <h1 class="font-rubik text-2xl text-gray-700 mb-2">Portofolio 👨‍💻</h1>
+            <h1 class="font-rubik text-2xl text-gray-700 mb-5">Show Time</h1>
+
+            <p class=" text-gray-600 mb-3">
+                Ah, let me take you on a quick tour of my digital playground! 🎮🚀
+                <br>
+                <br>
+                Picture this: I've dived into the world of coding and created websites that dance with user-friendly interfaces. 🌐💃 I've tamed the Internet of Things (IoT) jungle, making gadgets that can chat with each other and the cloud. 📲🌩️
+                <br>
+                <br>
+                But wait, there's more! I've tackled the enigmatic realm of networking, making data flow like magic. 🔮💻 And when it comes to security, I'm the digital superhero guarding your precious data. 🦸‍♂️🛡️
+                <br>
+                <br>
+                These projects? They're like puzzle pieces, each one teaching me something new, making me more versatile than a Swiss Army knife. So, if you're ready for some tech wizardry and creativity, let's team up and bring those brilliant ideas to life! 🌟💻🚀
+            </p>
+        </div>
+    </main>
+</body>
+<script src="../public/js/navHandler.js"></script>
+</html>
