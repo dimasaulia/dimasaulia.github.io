@@ -2,17 +2,17 @@ const CERTIFICATE = {
     kmipn: {
         title: "Kompetisi Mahasiswa Informatika Politeknik Nasional - Bronze on IoT Field",
         desc: "No desc Yet",
-        link: "https://drive.google.com/file/d/10e0LJ-wyYWfNugoA-fKm3ZH6iiiiulr-/preview ",
+        link: "https://drive.google.com/file/d/1uWwUAU_87eUSk_cUEiME-hfkUBTD7-NW/preview",
     },
     aitec: {
         title: "Agricultural Innovation Technology Competition - Bronze on Technology Inovation (IoT)",
         desc: "No desc Yet",
-        link: "https://drive.google.com/file/d/1uWwUAU_87eUSk_cUEiME-hfkUBTD7-NW/preview",
+        link: "https://drive.google.com/file/d/1NhobD0o83rkkLpEoz-H34yGIqr5NaIAt/preview ",
     },
     altera: {
         title: "Altera - Grand Finalist Digital Innovation Technology (UI/UX)",
         desc: "No desc Yet",
-        link: "https://drive.google.com/file/d/1NhobD0o83rkkLpEoz-H34yGIqr5NaIAt/preview",
+        link: "https://drive.google.com/file/d/10e0LJ-wyYWfNugoA-fKm3ZH6iiiiulr-/preview ",
     },
 };
 

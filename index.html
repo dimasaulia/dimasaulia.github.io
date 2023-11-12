@@ -1,168 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimas Porto</title>
-    <link rel="stylesheet" href="/public/style/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-50 font-quicksand flex">
-    <!-- NAVBAR -->
-    <nav id="navbar" class="hide-navbar z-100 transition-all ease-in-out delay-150 left-0 fixed top-10 w-full md:static md:block md:w-1/4 xl:w-1/6 h-screen bg-slate-50 p-5  border-r-2">
-        <h4 class="hidden md:block text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dimas Porto</title>
+        <link rel="stylesheet" href="/public/style/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-gray-50 font-quicksand flex">
+        <!-- NAVBAR -->
+        <nav
+            id="navbar"
+            class="hide-navbar z-100 transition-all ease-in-out delay-150 left-0 fixed top-10 w-full md:static md:block md:w-1/4 xl:w-1/6 h-screen bg-slate-50 p-5 border-r-2"
+        >
+            <h4
+                class="hidden md:block text-2xl font-extrabold text-gray-500 mb-10"
+            >
+                Dimas Aulia
+            </h4>
 
-        <div class="mb-5 flex text-gray-500 justify-between bg-slate-200 p-2 rounded-md">
-            <a href="/" class="font-rubik font-light cursor-pointer ">About</a>
-            <img src="/assets/arrow.svg" alt="active item" class="w-2 font-bold">
-        </div>
+            <div
+                class="mb-5 flex text-gray-500 justify-between bg-slate-200 p-2 rounded-md"
+            >
+                <a href="/" class="font-rubik font-light cursor-pointer"
+                    >About</a
+                >
+                <img
+                    src="/assets/arrow.svg"
+                    alt="active item"
+                    class="w-2 font-bold"
+                />
+            </div>
 
-        <div class="mb-5 flex text-gray-500 p-2">
-            <a href="/portofolio.html" class="font-rubik font-light cursor-pointer">Portofolio</a>
-        </div>
+            <div class="mb-5 flex text-gray-500 p-2">
+                <a
+                    href="/portofolio.html"
+                    class="font-rubik font-light cursor-pointer"
+                    >Portofolio</a
+                >
+            </div>
 
-        <div class="mb-5 flex text-gray-500 p-2">
-            <a href="/certificate.html" class="font-rubik font-light cursor-pointer">Certificate</a>
-        </div>
+            <div class="mb-5 flex text-gray-500 p-2">
+                <a
+                    href="/certificate.html"
+                    class="font-rubik font-light cursor-pointer"
+                    >Certificate</a
+                >
+            </div>
 
-        <div class="mb-5 flex text-gray-500 p-2">
-            <a href="/competition.html" class="font-rubik font-light cursor-pointer">Competition</a>
-        </div>
-    </nav>
+            <div class="mb-5 flex text-gray-500 p-2">
+                <a
+                    href="/competition.html"
+                    class="font-rubik font-light cursor-pointer"
+                    >Competition</a
+                >
+            </div>
+        </nav>
 
-    <header class="flex w-full h-12 bg-slate-50 border-b-2 md:hidden justify-between content-center fixed py-1 px-3">
-        <h4 class="font-rubik text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
-        <button id="toggle" class="block absolute top-1 right-5">
-            <span class="humberger-line origin-right transition-transform"></span>
-            <span class="humberger-line  transition-all ease-out delay-100"></span>
-            <span class="humberger-line origin-right transition-transform"></span>
-        </button>
-    </header>
+        <header
+            class="flex w-full h-12 bg-slate-50 border-b-2 md:hidden justify-between content-center fixed py-1 px-3"
+        >
+            <h4 class="font-rubik text-2xl font-extrabold text-gray-500 mb-10">
+                Dimas Aulia
+            </h4>
+            <button id="toggle" class="block absolute top-1 right-5">
+                <span
+                    class="humberger-line origin-right transition-transform"
+                ></span>
+                <span
+                    class="humberger-line transition-all ease-out delay-100"
+                ></span>
+                <span
+                    class="humberger-line origin-right transition-transform"
+                ></span>
+            </button>
+        </header>
 
-    <main class="w-full md:w-5/6 h-screen bg-slate-100 overflow-x-hidden overflow-y-scroll">
-        <div class="w-3/4 md:w-2/3 lg:w-3/5 xl:w-2/5 mx-auto mt-16">
-            <h1 class="font-rubik text-2xl text-gray-700 mb-2">Hey!👋</h1>
-            <h1 class="font-rubik text-2xl text-gray-700 mb-5">I'm Dimas Aulia</h1>
+        <main
+            class="w-full h-screen bg-slate-100 overflow-x-hidden overflow-y-scroll"
+        >
+            <div class="w-3/4 md:w-2/3 lg:w-3/5 xl:w-2/5 mx-auto mt-16">
+                <h1 class="font-rubik text-2xl text-gray-700 mb-2">Hey!👋</h1>
+                <h1 class="font-rubik text-2xl text-gray-700 mb-5">
+                    I'm Dimas Aulia
+                </h1>
 
-            <p class=" text-gray-600 mb-3">
-                Short introduction: i'm a 
-                <span class="bg-yellow-200"> Full stack web developer</span> and 
-                <span class="bg-yellow-200">IoT developer!</span>
-            </p>
-            <p class=" text-gray-600 mb-7">
-                Dive into my tech adventures! 🛸 Grab my 
-                <a href="/public/pdf/CV.pdf" download="" class="font-bold text-blue-700 hover:bg-blue-700 hover:text-slate-50">📰 CV</a>  
-                or <a href="/public/pdf/Portofolio.pdf" class="font-bold text-blue-700 hover:bg-blue-700 hover:text-slate-50">🖌️ portfolio</a>, 
-                and let's embark on a journey through codes, and innovation!
-            </p>
-            <hr class="border-t-4 bg-slate-600 mb-7">
-            <p class="text-gray-600">
-                More extended introduction 🚀:  I'm a fresh graduate from Politeknik Negeri Jakarta, majoring in Computer and Informatics Engineering. 
-                I come armed with a diverse skill set that covers an array of tech domains. 
-                From crafting <span class="bg-yellow-200"> full-stack apps with different tech stacks to engineering IoT devices</span>, I thrive on tech challenges. 
-            </p>
-            <br>
-            <p class="text-gray-600 mb-10">
-                💡💻 But there's more in my tech toolkit - 
-                I'm well-versed in networking intricacies, 
-                knowledgeable in system security, 
-                and also in the field of mobile app development. 
-                🌐🔐📱 So, whether it's coding, connecting, or securing, 
-                <span class="bg-yellow-200 font-bold">I'm your tech-savvy ally. Let's dive into the digital realm together!</span>
-            </p>
-            
-            <h1 class="font-rubik text-xl font-normal text-gray-50 mb-3 bg-slate-600  p-2 rounded-md">Work Experience</h1>
-            <a class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Politeknik Negeri Jakarta</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Research Assistant </span>
-                <span class="flex-none text-end text-gray-400"> 2021-2023</span>
-            </a>
-            <a class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer hover:text-violet-800">
-                <span class="flex-none font-semibold">PT. Konekthing Benda Pintar</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Fullstack & IoT Dev</span>
-                <span class="flex-none text-end text-gray-400"> 2022-2023</span>
-            </a>
+                <p class="text-gray-600 mb-3">
+                    Short introduction: i'm a
+                    <span class="bg-yellow-200"> Full stack web developer</span>
+                    and
+                    <span class="bg-yellow-200">IoT developer!</span>
+                </p>
+                <p class="text-gray-600 mb-7">
+                    Dive into my tech adventures! 🛸 Grab my
+                    <a
+                        href="/public/pdf/CV.pdf"
+                        download=""
+                        class="font-bold text-blue-700 hover:bg-blue-700 hover:text-slate-50"
+                        >📰 CV</a
+                    >
+                    or
+                    <a
+                        href="/public/pdf/Portofolio.pdf"
+                        class="font-bold text-blue-700 hover:bg-blue-700 hover:text-slate-50"
+                        >🖌️ portfolio</a
+                    >, and let's embark on a journey through codes, and
+                    innovation!
+                </p>
+                <hr class="border-t-4 bg-slate-600 mb-7" />
+                <p class="text-gray-600">
+                    More extended introduction 🚀: I'm a fresh graduate from
+                    Politeknik Negeri Jakarta, majoring in Computer and
+                    Informatics Engineering. I come armed with a diverse skill
+                    set that covers an array of tech domains. From crafting
+                    <span class="bg-yellow-200">
+                        full-stack apps with different tech stacks to
+                        engineering IoT devices</span
+                    >, I thrive on tech challenges.
+                </p>
+                <br />
+                <p class="text-gray-600 mb-10">
+                    💡💻 But there's more in my tech toolkit - I'm well-versed
+                    in networking intricacies, knowledgeable in system security,
+                    and also in the field of mobile app development. 🌐🔐📱 So,
+                    whether it's coding, connecting, or securing,
+                    <span class="bg-yellow-200 font-bold"
+                        >I'm your tech-savvy ally. Let's dive into the digital
+                        realm together!</span
+                    >
+                </p>
 
-            <h1 class="font-rubik text-xl font-normal text-gray-50 mb-5 mt-10 bg-slate-600  p-2 rounded-md">Projects</h1>
-            <a href="https://smartroom.id" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Smart Room</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Fullstack & IoT Dev</span>
-                <span class="flex-none text-end text-gray-400"> 2022-2023</span>
-            </a>
-            <a href="http://terrarium.ta-tmj.com/" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Smart Terrarium</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Frontend Developer</span>
-                <span class="flex-none text-end text-gray-400">2023</span>
-            </a>
-            <a href="https://medicine.ta-tmj.com/" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Smart Medicine</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Fullstack & IoT Dev</span>
-                <span class="flex-none text-end text-gray-400">2023</span>
-            </a>
-            <a href="http://bodymon.ta-tmj.com/" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Body Monitoring System</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Beckend Developer</span>
-                <span class="flex-none text-end text-gray-400">2023</span>
-            </a>
-            <a href="http://locker.ta-tmj.com/" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Locker Management System</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Fullstack & IoT Dev</span>
-                <span class="flex-none text-end text-gray-400">2023</span>
-            </a>
-            <a href="https://t.me/ELABdemo2bot" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Inventory Management System</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Backend & IoT Dev</span>
-                <span class="flex-none text-end text-gray-400">2023</span>
-            </a>
-            <a href="https://github.com/Rdtapr/Tracking" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Bus Tracking System</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Backend & IoT Dev</span>
-                <span class="flex-none text-end text-gray-400">2023</span>
-            </a>
-            <a href="https://github.com/dimasaulia/final-project-sib" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Second Hand Marketplace</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Backend Dev</span>
-                <span class="flex-none text-end text-gray-400">2022</span>
-            </a>
-            <a href="https://jaringanirigasicerdas.github.io/" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Smart Irrigation</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Fullstack & IoT Dev</span>
-                <span class="flex-none text-end text-gray-400"> 2021-2022</span>
-            </a>
-            <a href="http://sdnbronggangbaru.pythonanywhere.com/" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">SDN Bronggang Baru</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Fullstack Web Dev</span>
-                <span class="flex-none text-end text-gray-400">2021</span>
-            </a>
-            <a href="https://github.com/dimasaulia/csc-web-idcloudhost" target="_blank" class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800 ">
-                <span class="flex-none font-semibold">Computer Student Club Web</span>
-                <span class="border-b-2 border-gray-200 w-full"></span>
-                <span class="flex-none text-end me-2 text-gray-600">Fullstack Web Dev</span>
-                <span class="flex-none text-end text-gray-400">2021</span>
-            </a>
-            <a href="https://github.com/dimasaulia" class="text-gray-500 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-20 hover:text-violet-800 ">Find more project on my github ↗️</a>
+                <h1
+                    class="font-rubik text-xl font-normal text-gray-50 mb-3 bg-slate-600 p-2 rounded-md"
+                >
+                    Work Experience
+                </h1>
+                <a
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Politeknik Negeri Jakarta</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Research Assistant
+                    </span>
+                    <span class="flex-none text-end text-gray-400">
+                        2021-2023</span
+                    >
+                </a>
+                <a
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >PT. Konekthing Benda Pintar</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Fullstack & IoT Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">
+                        2022-2023</span
+                    >
+                </a>
 
-            <h1 class="font-rubik text-xl font-normal text-slate-700 mb-2 mt-10 rounded-md">Get in touch w/ me 👨‍💻</h1>
-            <a href="https://www.linkedin.com/in/dimas-a-14b9b5131/" class="text-gray-500 flex items-center cursor-pointer mb-2 hover:text-violet-800 ">Linkedin </a>
-            <a href="https://github.com/dimasaulia" class="text-gray-500 flex items-center cursor-pointer hover:text-violet-800 mb-2">Github</a>
-            <a href="mailto:dimasauliaservice@gmail.com" class="text-gray-500 flex items-center cursor-pointer hover:text-violet-800 mb-60">Email</a>      
+                <h1
+                    class="font-rubik text-xl font-normal text-gray-50 mb-5 mt-10 bg-slate-600 p-2 rounded-md"
+                >
+                    Projects
+                </h1>
+                <a
+                    href="https://smartroom.id"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold">Smart Room</span>
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Fullstack & IoT Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">
+                        2022-2023</span
+                    >
+                </a>
+                <a
+                    href="http://terrarium.ta-tmj.com/"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold">Smart Terrarium</span>
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Frontend Developer</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2023</span>
+                </a>
+                <a
+                    href="https://medicine.ta-tmj.com/"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold">Smart Medicine</span>
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Fullstack & IoT Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2023</span>
+                </a>
+                <a
+                    href="http://bodymon.ta-tmj.com/"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Body Monitoring System</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Beckend Developer</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2023</span>
+                </a>
+                <a
+                    href="http://locker.ta-tmj.com/"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Locker Management System</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Fullstack & IoT Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2023</span>
+                </a>
+                <a
+                    href="https://t.me/ELABdemo2bot"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Inventory Management System</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Backend & IoT Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2023</span>
+                </a>
+                <a
+                    href="https://github.com/Rdtapr/Tracking"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Bus Tracking System</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Backend & IoT Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2023</span>
+                </a>
+                <a
+                    href="https://github.com/dimasaulia/final-project-sib"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Second Hand Marketplace</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Backend Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2022</span>
+                </a>
+                <a
+                    href="https://jaringanirigasicerdas.github.io/"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Smart Irrigation</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Fullstack & IoT Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">
+                        2021-2022</span
+                    >
+                </a>
+                <a
+                    href="http://sdnbronggangbaru.pythonanywhere.com/"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >SDN Bronggang Baru</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Fullstack Web Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2021</span>
+                </a>
+                <a
+                    href="https://github.com/dimasaulia/csc-web-idcloudhost"
+                    target="_blank"
+                    class="text-gray-700 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-3 hover:text-violet-800"
+                >
+                    <span class="flex-none font-semibold"
+                        >Computer Student Club Web</span
+                    >
+                    <span class="border-b-2 border-gray-200 w-full"></span>
+                    <span class="flex-none text-end me-2 text-gray-600"
+                        >Fullstack Web Dev</span
+                    >
+                    <span class="flex-none text-end text-gray-400">2021</span>
+                </a>
+                <a
+                    href="https://github.com/dimasaulia"
+                    class="text-gray-500 flex flex-col md:flex-row items-start md:items-center cursor-pointer mb-20 hover:text-violet-800"
+                    >Find more project on my github ↗️</a
+                >
 
-        </div>
-    </main>
-</body>
-<script src="../public/js/navHandler.js"></script>
+                <h1
+                    class="font-rubik text-xl font-normal text-slate-700 mb-2 mt-10 rounded-md"
+                >
+                    Get in touch w/ me 👨‍💻
+                </h1>
+                <a
+                    href="https://www.linkedin.com/in/dimas-a-14b9b5131/"
+                    class="text-gray-500 flex items-center cursor-pointer mb-2 hover:text-violet-800"
+                    >Linkedin
+                </a>
+                <a
+                    href="https://github.com/dimasaulia"
+                    class="text-gray-500 flex items-center cursor-pointer hover:text-violet-800 mb-2"
+                    >Github</a
+                >
+                <a
+                    href="mailto:dimasauliaservice@gmail.com"
+                    class="text-gray-500 flex items-center cursor-pointer hover:text-violet-800 mb-60"
+                    >Email</a
+                >
+            </div>
+        </main>
+    </body>
+    <script src="../public/js/navHandler.js"></script>
 </html>
