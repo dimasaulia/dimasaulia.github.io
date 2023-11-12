@@ -19,6 +19,11 @@ const CERTIFICATE = {
         desc: "No desc Yet",
         link: "https://drive.google.com/file/d/1CZXaxUHzyH3_i-N781tyOrC7i4hjz2HE/preview",
     },
+    golang_be: {
+        title: "Golang Backend Developer",
+        desc: "No desc Yet",
+        link: "https://drive.google.com/file/d/1FM7b8FRRhHZonTcnhyxckl_LjIf59tYh/preview",
+    },
 };
 
 const cert_container = document.querySelectorAll(".cert");
