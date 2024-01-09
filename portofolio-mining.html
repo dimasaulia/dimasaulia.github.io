@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Porto</title>
+    <link rel="stylesheet" href="/public/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-quicksand flex">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="hide-navbar z-[999999] transition-all ease-in-out delay-150 left-0 fixed top-10 w-full md:static md:block md:w-1/4 xl:w-1/6 h-screen bg-slate-50 p-5  border-r-2">
+        <h4 class="hidden md:block text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
+
+        <div class="mb-5 flex text-gray-500  p-2">
+            <a href="/index.html" class="font-rubik font-light cursor-pointer ">About</a>
+        </div>
+        
+    
+        <div class="mb-5 text-gray-500">
+            <div class="mb-1 flex text-gray-500 p-2 justify-between">
+                <a href="/portofolio.html" class="font-rubik font-light cursor-pointer">Portofolio</a>
+            </div>
+
+            <div class="mb-1 flex text-gray-500 ps-5 py-2 justify-between active-navbar">
+                <a href="/portofolio-mining.html?c=mining" data-category="mining" class="font-rubik font-light cursor-pointer">Mining System</a>
+                <img src="/assets/arrow.svg" alt="active item" class="w-2 font-bold me-2">
+            </div>
+            <div class="mb-1 flex text-gray-500 ps-5 py-2 justify-between">
+                <a href="/portofolio-smartdoor.html?c=smartdoorlock" data-category="smartdoorlock" class="font-rubik font-light cursor-pointer">Smart Door Lock</a>
+            </div>
+        </div>
+  
+
+        <div class="mb-4">
+            <div class="mb-1 flex text-gray-500 p-2 justify-between">
+                <a href="/certificate.html" class="font-rubik font-light cursor-pointer">Certificate</a>
+            </div>
+        </div>
+        
+        
+        <div class="mb-4 text-gray-500 p-2">
+            <div class="mb-1 flex text-gray-500 py-2 justify-between">
+                <a href="/competition.html" class="font-rubik font-light cursor-pointer">Competition</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="flex w-full h-12 bg-slate-50 border-b-2 md:hidden justify-between content-center fixed py-1 px-3">
+        <h4 class="font-rubik text-2xl font-extrabold text-gray-500 mb-10">Dimas Aulia</h4>
+        <button id="toggle" class="block absolute top-1 right-5">
+            <span class="humberger-line origin-right transition-transform"></span>
+            <span class="humberger-line  transition-all ease-out delay-100"></span>
+            <span class="humberger-line origin-right transition-transform"></span>
+        </button>
+    </header>
+
+    <main class="w-full md:w-5/6 h-screen bg-slate-100 overflow-x-hidden overflow-y-scroll">
+        <div class="w-3/4 md:w-2/3 lg:w-3/5 xl:w-2/5 mx-auto mt-16">
+            <h1 class="font-rubik text-2xl text-gray-700 mb-5" id="cert-title">Mining Management System</h1>
+
+            <img src="/public/image/mining.png" alt="mining baner" class="rounded-md">
+            
+            <p class="text-slate-700 mt-5">
+                The Mining Management System is a technological ecosystem leveraging hardware (sensors) to track vehicle locations and provide real-time positioning. Additionally, the system features fuel management capabilities, measuring the quantity of fuel distributed from tanker trucks to operational vehicles.
+                <a href="http://dashboard.faztrack.id" target="_blank" class="text-green-500 font-semibold hover:text-blue-900">Go to mining management dashboard ↗️</a>
+            </p>
+
+            <h2 class="text-slate-700 font-semibold text-xl mt-5">Project Contributions</h2>
+
+            <ul class="list-disc text-slate-700 m-[1.15rem]">
+                <li>Conducted thorough system requirement analysis based on given problem descriptions.</li>
+                <li>Crafted an intuitive system flow for seamless functionality.</li>
+                <li>Designed an engaging and user-friendly interface to enhance user experience.</li>
+                <li>Translated design concepts into HTML and CSS programs for effective implementation.</li>
+                <li>Engineered the backend system using Golang, PostgreSQL, MQTT, and WebSockets for optimal performance.</li>
+                <li>Seamlessly integrated backend and frontend components for a cohesive user experience.</li>
+                <li>Engineered firmware and assembled hardware devices based on ESP32 to accurately measure fuel distribution volume.</li>
+                <li>Configured Teltonika tracker devices to ensure precise tracking and monitoring.</li>
+                <li>Represented the company, fostering relationships with diverse vendors to secure high-quality supporting devices, thereby maximizing system efficiency.</li>
+            </ul>
+
+            <h2 class="text-slate-700 font-semibold text-xl mt-5">System Feature</h2>
+            <ul class="list-disc text-slate-700 m-[1.15rem]">
+                <li> <a href="#user">User Management</a></li>
+                <li> <a href="#tag">TAG Management</a></li>
+                <li> <a href="#device">Device Management</a></li>
+                <li> <a href="#vehicle">Vehicle Management</a></li>
+                <li> <a href="#fuel">Fuel Management</a></li>
+                <li> <a href="#geofencing">Geofencing Management</a></li>
+            </ul>
+
+            <h3 class="text-slate-700 font-semibold mb-2" id="user">User Management</h3>
+            <p class="mb-2">This menu provides a comprehensive overview of all registered users, serving as a hub for modifying user roles within the SaaS system. It empowers administrators to efficiently manage user permissions and access levels, ensuring seamless control over the platform's security and functionality.</p>
+            <img src="/public/image/mining-1.png" alt="mining user" class="rounded-md border shadow-sm mb-2">
+            <p class="mb-2">This page offers granular control over the features accessible to SaaS users. It acts as a command center, allowing administrators to precisely configure user access to different functionalities. With Feature Control, you can tailor the user experience, optimizing the platform for individual needs and enhancing overall efficiency.</p>
+            <img src="/public/image/mining-2.jpeg" alt="mining user" class="rounded-md border shadow-sm mb-2">
+
+            <!-- <h3 class="text-slate-700 font-semibold mb-2" id="tag">TAG Management</h3> -->
+            <!-- <h3 class="text-slate-700 font-semibold mb-2" id="device">Device Management</h3> -->
+            <h3 class="text-slate-700 font-semibold mb-2" id="vehicle">Vehicle Management</h3>
+            <p class="mb-2">The system not only offers real-time location tracking capabilities and measures data like RPM, fuel level, and engine coolant temperature but also includes a playback feature. This allows users to review historical data and track past movements or operations, providing valuable insights and enhancing the system's analytical capabilities.</p>
+            <img src="/public/image/mining-3.jpeg" alt="mining user" class="rounded-md border shadow-sm mb-2">
+            
+            <h3 class="text-slate-700 font-semibold mb-2" id="fuel">Fuel Management</h3>
+            <p class="mb-2">This system excels in quantifying distributed fuel, providing insights into the quantity dispensed, the distributor's identity, the timestamp, and the location of each distribution. By tracking these vital details, the system ensures a comprehensive record of fuel transactions, enabling precise monitoring of distribution activities.</p>
+            <img src="/public/image/mining-4.jpeg" alt="mining user" class="rounded-md border shadow-sm mb-2">
+
+            <h3 class="text-slate-700 font-semibold mb-2" id="geofencing">Geofencing Management</h3>
+            <p class="mb-2">Empower your system with geofence management, allowing users to create virtual boundaries to monitor and verify the location of vehicles within specified areas. This feature ensures a dynamic and effective means of tracking whether vehicles are within designated zones, providing enhanced security and control over their geographical presence.</p>
+            <img src="/public/image/mining-5.jpeg" alt="mining user" class="rounded-md border shadow-sm mb-2">
+
+            <div class="iframe-container">
+                <iframe
+                    src=""
+                    frameBorder="0"
+                    scrolling="auto"
+                    height="auto"
+                    width="100%"
+                    class="mb-60 rounded-md drop-shadow responsive-iframe"
+                    id="cert-url"
+                ></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../public/js/navHandler.js"></script>
+<script src="../public/js/portofolio.js"></script>
+</html>
